@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  background: url('https://i.pinimg.com/originals/79/a2/da/79a2daea48b8c41615da7abcb7c5f93c.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: rgba(27, 29, 54, 0.885); 
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7); 
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
+  backdrop-filter: blur(8px);
+  border: 2px solid #3f4e92a7; 
+}
+
+.question p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #F4D6A0;
+  background-color: rgba(109, 78, 159, 0.85); 
+  border: 2px solid #E5A3B3;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(229, 163, 179, 0.5); 
+}
+
+.options .option {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #3F4E92; 
+  border: 2px solid #5EC4C8; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #F4D6A0; 
+}
+
+.options .option:hover {
+  background-color: #5EC4C8; 
+  color: #1B1D36;
+}
+
+.options .option.selected {
+  background-color: #E5A3B3; 
+  color: white;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #F4D6A0;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #E5A3B3, #3F4E92); 
+  color: #1B1D36; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.4s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #F4D6A0, #5EC4C8); 
+  color: #1B1D36;
+}
