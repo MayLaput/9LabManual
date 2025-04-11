@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  background: url('https://i.pinimg.com/originals/d4/f0/8b/d4f08b4458e8da0e6c5b4499d4b65af8.gif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: rgba(254, 240, 230, 0.95); /* light creamy background */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
+  backdrop-filter: blur(6px);
+  border: 2px solid #ff6f61;
+}
+
+.question p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #ffd1c1;
+  border: 2px solid #ff6f61;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 111, 97, 0.2);
+}
+
+.options .option {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #fceeee;
+  border: 2px solid #ffb6a9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #333;
+}
+
+.options .option:hover {
+  background-color: #ffd1c1;
+}
+
+.options .option.selected {
+  background-color: #ffb6a9;
+  color: white;
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #e65c4f;
+}
